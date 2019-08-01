@@ -1,0 +1,23 @@
+{
+  "apps": [
+    {
+      "name": "environment-fork",
+      "script": "index.js",
+      "watch": false,
+      "env": {
+        "LD_LIBRARY_PATH": "./ExternalLibrary/"
+      }
+    },
+    {
+      "name": "environment-cluster",
+      "instances" : 2,
+       "exec_mode": "cluster",
+       "script": "index.js",
+      "watch": false,
+      "env": {
+        "LD_LIBRARY_PATH": "./ExternalLibrary/"
+      }
+    },
+
+  ]
+}
