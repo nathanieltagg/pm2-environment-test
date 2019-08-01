@@ -29,7 +29,7 @@ done
 But if you unset the library:
 ```bash
   $ export LD_LIBRARY_PATH=
-  $ node.js
+  $ node index.js
  ```
  it fails with a dlopen error.
 
